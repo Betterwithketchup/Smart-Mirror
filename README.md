@@ -1,2 +1,4 @@
 # Smart-Mirror
-Smart Mirror Project
+APIs:
+-https://darksky.net/dev/
+-https://citymapper.3scale.net
