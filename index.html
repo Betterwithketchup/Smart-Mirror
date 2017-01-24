@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Mirror</title>
-</head>
-<body>
-	
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<meta http-equiv="refresh" content="5; URL=file:///home/aaron/Desktop/Final-Project/Smart-Mirror/index.html">
+	</head>
+  <body>
+    <h1>The Smartest Mirror</h1>
+<!--     We are using node <script>document.write(process.versions.node)</script>,
+Chrome <script>document.write(process.versions.chrome)</script>,
+and Electron <script>document.write(process.versions.electron)</script>.
+ -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--   <script type="text/javascript" src="other.js"></script>-->  
+<div id="appender">
+	<script>
+		document.write(moment().format());
+	</script>
+  </div>
+  </body>
 </html>
