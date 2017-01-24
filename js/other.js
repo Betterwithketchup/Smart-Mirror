@@ -3,7 +3,7 @@ var ctx = c.getContext("2d");
 ctx.font = "13px Arial";
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, 200, 100);
-ctx.fillRect(210, 110, 410, 210);
+ctx.fillRect(210, 0, 370, 100);
 
 $(function time(){
 	ctx.clearRect(0,0,200,100)
