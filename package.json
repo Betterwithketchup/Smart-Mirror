@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "main": "main.js",
   "scripts": {
-     "start": "electron ."
-    },
+    "start": "electron ."
+  },
   "devDependencies": {
+    "devtron": "^1.4.0",
     "electron": "^1.4.15"
   }
 }
