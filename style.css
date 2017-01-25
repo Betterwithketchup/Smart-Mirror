@@ -1,6 +1,154 @@
-html {
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
+
+h1 {
+  font: 900 2em "Roboto", sans-serif;
+  color: black;
+}
+
+h2 {
+  font: 700 1.25em "Roboto", sans-serif;
+  color: black;
+}
+
+h3 {
+  font: 500 1em "Roboto", sans-serif;
+  color: black;
+}
+
+p {
+  font: 0.8em "Open Sans", sans-serif;
+  margin: 0 0 1.5em;
+  text-decoration: none;
+}
+
+li {
+  font: 0.8em "Open Sans", sans-serif;
+  color: black;
+}
+
 body {
-    background-color: lightblue;
+  height: auto;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.site {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+  font-size: 16px;
+  min-height: 800px;
+}
+
+.site-header,
+.site-footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex: none;
+      flex: none;
+}
+
+.header {
+  text-align: center;
+}
+
+.header-title {
+  color: black;
+}
+
+.site-content {
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  width: 100%;
+}
+
+.site-content::after {
+  content: '\00a0';
+  display: block;
+  margin-top: 1.5em;
+  height: 0px;
+  visibility: hidden;
+}
+
+.container {
+  max-width: 60em;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100vh;
+}
+
+.grid-cell {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.cell-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.cell-wrapper::after {
+  content: '\00a0';
+  display: block;
+  margin-top: 1em;
+  height: 0px;
+  visibility: hidden;
+}
+
+.temp-pad {
+  padding-left: 300px;
+}
+
+.time-pad {
+  padding-left: 50px;
+}
+
+.news-pad {
+  padding-right: 50px;
+  padding-top: 280px;
+}
+
+.list-box {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.list-box li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+  width: 100%;
 }
