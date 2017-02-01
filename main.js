@@ -11,7 +11,7 @@ width: x, height: y, */
 function createWindow () {
   // Create the browser window.
   const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
-  win = new BrowserWindow({width, height, frame:false})
+  win = new BrowserWindow({width, height, frame:false, fullscreen:true})
   // and load the index.html of the app.
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
