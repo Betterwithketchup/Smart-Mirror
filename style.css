@@ -8,17 +8,17 @@
 
 h1 {
   font: 900 2em "Roboto", sans-serif;
-  color: black;
+  color: white;
 }
 
 h2 {
   font: 700 1.25em "Roboto", sans-serif;
-  color: black;
+  color: white;
 }
 
 h3 {
   font: 500 1em "Roboto", sans-serif;
-  color: black;
+  color: white;
 }
 
 p {
@@ -29,12 +29,13 @@ p {
 
 li {
   font: 0.8em "Open Sans", sans-serif;
-  color: black;
+  color: white;
 }
 
 body {
   height: auto;
   min-height: 100%;
+  background-color: black;
 }
 
 html {
@@ -64,7 +65,7 @@ html {
 }
 
 .header-title {
-  color: black;
+  color: white;
 }
 
 .site-content {

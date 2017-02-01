@@ -26,7 +26,7 @@ $(function weather(){
 		success:function(response){	
 			//$("#weather").append("<li>"+response.currently.summary+"</li>");
 			$("#weather").append("<canvas id='icon1' width="+64+" height="+64+"></canvas>");
-			var skycons = new Skycons({"color": "black"});
+			var skycons = new Skycons({"color": "white"});
 			console.log(response.currently.icon)
 			skycons.add("icon1", response.currently.icon);
 			// if you're using the Forecast API, you can also supply
